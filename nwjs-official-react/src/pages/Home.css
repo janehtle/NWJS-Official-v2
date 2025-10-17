@@ -1,0 +1,64 @@
+.home-page {
+  background-color: #1b4ca3;
+  min-height: 100vh;
+}
+
+#video {
+  display: none;
+}
+
+#musicBtn {
+  display: none;
+}
+
+.logo {
+  position: fixed;
+  top: 50%;
+  left: 51%; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#nwjsLogo {
+  height: 150px;
+}
+
+/* --------- media queries ---------- */
+@media (min-width: 801px) {
+  .home-page {
+    background-color: transparent;
+  }
+
+  #video {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  #musicBtn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4b515a50;
+    border: none;
+    border-radius: 100%;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  #musicBtn:hover {
+    background-color: #4b515a;
+  }
+
+  #nwjsLogo {
+    height: 200px;
+  }
+}
+

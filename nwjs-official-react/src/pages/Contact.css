@@ -1,0 +1,79 @@
+.contact-page {
+  background-color: #b4ceed;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+main.container {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+h1 {
+  padding: 20px;
+  color: white;
+}
+
+form input, form textarea {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+textarea {
+  height: 120px;
+  font-family: Arial, "Arial Narrow", Helvetica, sans-serif;
+}
+
+form button {
+  font-size: 16px;
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 5px;
+  width: 80px;
+  margin-top: 24px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(186, 183, 183);
+}
+
+/* --------- media queries --------- */
+@media (min-width: 768px) {
+  main.container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 801px) {
+  .contact-page {
+    background-image: url(/images/nwjsbg2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main.container {
+    width: 28%;
+  }
+}

@@ -1,0 +1,138 @@
+.product {
+  width: 230px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  z-index: 1;              
+}
+
+.product img {
+  height: 200px;
+  margin: 20px 0;  
+}
+
+.productName {
+  text-align: center;
+}
+
+.description {
+  font-size: 15px;
+  color: rgb(78, 78, 78);  
+  text-align: center;
+}
+
+.price {
+  margin-top: 20px;
+}
+
+.addCartBtn, .removeCartBtn {
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+
+.addCartBtn:hover, .removeCartBtn:hover {
+  cursor: pointer;
+  background-color: rgb(77, 76, 76);  
+}
+
+.mainContent {
+  display: flex;  
+}
+
+.productList {
+  position: relative;  
+  left: 45%;           
+  padding: 5px;        
+}
+
+.filterBar {
+  display: flex;               
+  flex-direction: column;      
+  position: fixed;             
+  left: 0;                    
+  height: 100vh;               
+  padding: 15px;               
+  border-right: 1px solid rgba(212, 211, 211, 0.894);  
+}
+
+.filterSection {
+  display: flex;          
+  flex-direction: column; 
+  margin: 8px;            
+  gap: 10px;              
+}
+
+.filterSection label {
+  display: flex;        
+  align-items: center;  
+  cursor: pointer;      
+  font-size: 14px;      
+}
+
+.filterSection label:hover {
+  color: #333;  
+}
+
+.filterSection input[type="radio"], .filterSection input[type="checkbox"] {
+  margin-right: 8px;  
+  cursor: pointer;    
+}
+
+.filterSection h3 {
+  font-size: 16px;        
+  margin-bottom: 0;       
+  font-weight: bold;      
+}
+
+/* .productContainer */
+
+/* -------- media queries --------- */
+@media (min-width: 1024px) {
+  .product img {
+    height: 250px;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .productList {
+    left: 30%;  
+  }
+
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 20px;                        
+  }
+}
+
+@media (min-width: 801px) {
+  .productList {
+    left: 20%;  
+  }
+
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    gap: 20px;                           
+  }
+}
+
+@media (min-width: 1024px) {
+  .productList {
+    left: 18%;  
+  }
+
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    gap: 100px;                               
+  }
+}
+
+

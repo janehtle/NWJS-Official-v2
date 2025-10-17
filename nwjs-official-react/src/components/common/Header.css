@@ -1,0 +1,88 @@
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 45px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav a.active { /* in header.jsx: <Link className={location.pathname === "/" ? "active" : ""}> */
+  text-decoration: underline;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: white;
+  box-shadow: -8px 0 8px rgba(40, 40, 40, 0.604);
+  flex-direction: column;
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Shows the sidebar when React state isMobileMenuOpen is true */
+/* className={`sidebar ${isMobileMenuOpen ? "open" : ""}`} */
+.sidebar.open { 
+  display: flex;
+}
+
+.sidebar li {
+  width: 100%;
+  font-size: 22px;
+}
+
+.sidebar a {
+  width: 100%;
+  color: black;
+}
+
+/* --------- media queries ---------- */
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 801px) {
+  .hamburgerMenu {
+    display: none;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px;
+    font-size: 22px;
+  }
+}
