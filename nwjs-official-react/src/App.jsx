@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom" //allows to navi
 import { ProductProvider } from "./context/ProductContext"
 import Layout from "./components/common/Layout"
 import Home from "./pages/Home"
-import Products from "./pages/Product"
+import Products from "./pages/Products"
 import Contact from "./pages/Contact"
 import "./App.css"
 

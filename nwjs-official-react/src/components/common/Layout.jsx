@@ -1,17 +1,18 @@
 //basic structure: Header, main content area (children) - tthis is where each page's content goes, Footer
-
 import Header from "./Header"
 import Footer from "./Footer"
 
-function Layout() {
+function Layout({children}) {
   return (
-    <Header />
+    <>
+      <Header />
 
-    // <main>
-    //   {children}
-    // </main>
+      <main>
+        {children}
+      </main>
 
-  //   <Footer />
+      <Footer />
+    </>
   )
 }
 

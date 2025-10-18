@@ -26,7 +26,7 @@ nav a:hover {
 }
 
 nav a.active { /* in header.jsx: <Link className={location.pathname === "/" ? "active" : ""}> */
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .sidebar {

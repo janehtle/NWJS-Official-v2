@@ -1,5 +1,4 @@
-//import this when contact component is done: import ContactForm from '../components/contact/ContactForm'
-
+import ContactForm from '../components/contact/ContactForm'
 import "./Contact.css"
 
 function Contact() {

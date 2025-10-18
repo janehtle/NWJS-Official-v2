@@ -89,7 +89,10 @@
   font-weight: bold;      
 }
 
-/* .productContainer */
+.productContainer {
+  /* Mobile: Default block layout (no grid needed) */
+  /* Grid will be enabled at 768px breakpoint */
+} 
 
 /* -------- media queries --------- */
 @media (min-width: 1024px) {
