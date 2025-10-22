@@ -4,6 +4,9 @@ Refactored version of first iteration of my NEWJEANS Official Website, but using
 
 [Live Demo](https://nwjs-official-react.vercel.app/)
 
+# Note - Database
+Regarding the database, it is created and connected. However, the issue lies in trying to get it to render. But via http://localhost:5000/products, all products are able to be display in JSON format. 
+
 # Disclaimer
 This website is for EDUCATIONAL PURPOSES ONLY. It is the result of an e-Commerce Project assigned by Road to Hire to practice HTML, CSS, and JavaScript skills. All content is credited to their original creators (NewJeans, ADOR, HYBE Labels) and other creators who shared on public sites and communities where their content is allowed to be specifically used freely for any type of project, commercial or personal.
 
@@ -15,3 +18,5 @@ This website is for EDUCATIONAL PURPOSES ONLY. It is the result of an e-Commerce
 - W3Schools
 - MDN Web Docs
 - Google
+- Amazon RDS
+- React Docs
