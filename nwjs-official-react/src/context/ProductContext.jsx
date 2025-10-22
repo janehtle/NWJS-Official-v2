@@ -13,7 +13,7 @@ export function ProductProvider({children}) {
 
   {/* useEffect lets us perform side effects after rendering which include fetching data from API (what we need here) */}
   useEffect(() => {
-    fetch("/src/data/products.json") /* testing with JSON first, need to update to connect to AWS DB - still need to do */
+    fetch("http://localhost:5000/products") 
       .then(response => response.json()) /* once fetched, response obj written in json format, which will turn into usable js materials */
       .then(data => {
         setProducts(data) /* updates products state, re-renders and changes from {} to product obj, so we'll see the data/products */
